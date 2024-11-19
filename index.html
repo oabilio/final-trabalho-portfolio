@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/png" href="assets/tela-de-computador.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Abílio Pedro</title>
+</head>
+<body>
+    <div class="header">
+        <div class="botoes">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <button type="button" class="btn-principal" onclick="scrollToSection('projetos')">Projetos</button>
+            <button type="button" class="btn-principal" onclick="scrollToSection('sobre-mim')">Sobre mim</button>
+            <button type="button" class="btn-principal" onclick="scrollToSection('academico')">Acadêmico</button>
+            <button type="button" class="btn-principal" onclick="scrollToSection('habilidades')">Habilidades</button>
+            <button type="button" class="btn-principal" onclick="scrollToSection('contato')">Fale comigo</button>
+        </div>
+    </div>
+
+    <div class="caixa-titulo" id="projetos">
+        <h1 class="titulo">Projetos</h1>
+    </div>
+
+    <div class="projetos">
+        <a href="assets/projeto1.html">
+            <button type="button" class="btn-projeto" id="btn-projeto1">Woody's Train Trouble</button>
+        </a>
+        <a href="assets/projeto2.html">
+            <button type="button" class="btn-projeto" id="btn-projeto2">Jokenpô em Python</button>
+        </a>
+        <a href="assets/projeto3.html">
+            <button type="button" class="btn-projeto" id="btn-projeto3">Máquina de Bebidas em Python</button>
+        </a>
+        <a href="assets/projeto4.html">
+            <button type="button" class="btn-projeto" id="btn-projeto4">Shadows of Ellindor</button>
+        </a>
+        <a href="assets/projeto5.html">
+            <button type="button" class="btn-projeto" id="btn-projeto5">CiênciaLab</button>
+        </a>
+        <a href="assets/projeto6.html">
+            <button type="button" class="btn-projeto" id="btn-projeto6">Análise da MIUI</button>
+        </a>
+        <a href="assets/projeto7.html">
+            <button type="button" class="btn-projeto" id="btn-projeto7">Análise Stephen Hawking</button>
+        </a>
+        <a href="assets/projeto8.html">
+            <button type="button" class="btn-projeto" id="btn-projeto8">Controlador de Jardim ESP32</button>
+        </a>
+    </div>
+
+    <div class="caixa-titulo-1" id="sobre-mim">
+        <h1 class="titulo">Sobre mim</h1>
+    </div>
+
+    <div class="sobre-mim">
+        <div class="imagem-sobre-mim">
+            <img src="assets/sobremim.png" alt="Abilio" class="foto-sobre-mim">
+        </div>
+        <div class="texto-sobre-mim">
+            <p class="p-sobre-mim">Sou Abílio Pedro, tenho 18 anos e muita
+                vontade de crescer na área de tecnologia. Tenho interesse em aprender
+                novas linguagens de programação e me desenvolver continuamente.
+                Sou comunicativo, gosto de trabalhar em equipe e estou sempre buscando
+                oportunidades para expandir meu conhecimento e contribuir em
+                projetos colaborativos.</p>
+        </div>
+    </div>
+
+    <div class="caixa-titulo-2" id="academico">
+        <h1 class="titulo">Acadêmico</h1>
+    </div>
+
+    <div class="academico">
+        <div class="imagem-puc">
+            <img src="assets/logopuc.png" alt="PUCPR" class="logo-puc">
+        </div>
+        <div class="texto-sobre-mim">
+            <p class="p-sobre-mim">Faço o curso de Ciência da Computação na Pontifícia
+                Universidade Católica do Paraná (PUCPR),
+                onde tenho explorado uma variedade de temas, incluindo sistemas ciberfísicos,
+                desenvolvimento com Construct e Processing, e fundamentos de programação em HTML,
+                CSS, JavaScript e Python. Em filosofia, tenho refletido sobre as ideias de
+                Stephen Hawking, especialmente suas contribuições para o debate sobre
+                inteligência artificial. Esse aprendizado está ampliando meu entendimento
+                técnico e crítico na área de tecnologia.</p>
+        </div>
+    </div>
+
+    <div class="caixa-titulo-3" id="habilidades">
+        <h1 class="titulo">Habilidades</h1>
+    </div>
+    
+    <div class="habilidades">
+        <div class="linguagens">
+            <div class="imagem-puc">
+                <img src="assets/linguagens.png" alt="Linguagens" class="img-linguagens">
+            </div> 
+            <div class="texto-linguagens">
+                <h1 class="titulo">Linguagens</h1>
+                <p class="p-linguagens">
+                    HTML, CSS, JavaScript e Python
+                </p>
+            </div>
+        </div>
+
+        <div class="ferramentas">
+            <div class="imagem-puc">
+                <img src="assets/ferramentas.png" alt="Ferramentas" class="img-ferramentas">
+            </div> 
+            <div class="texto-linguagens">
+                <h1 class="titulo">Ferramentas</h1>
+                <p class="p-linguagens">
+                    Canva, VS Code e Notion
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="caixa-titulo-4" id="contato">
+        <h1 class="titulo">Contato</h1>
+    </div>
+    
+    <div class="contato">
+        <button type="button" class="btn-contato" onclick="window.open('https://www.linkedin.com/in/abílio-alcântara-a7577024a', '_blank')">LinkedIn</button>
+        <button type="button" class="btn-contato" onclick="window.open('https://www.instagram.com/abilioalcantara/', '_blank')">Instagram</button>
+        <button type="button" class="btn-contato" onclick="copiarEmail()">Email</button>
+    </div>
+
+    <div class="desenvolvido-por">
+        <p class="p-dev">
+            Feito por Abílio Pedro, 2024.
+        </p>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
